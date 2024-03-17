@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <style>
+        body {
+            background-color: #e0f2f1; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wishlist-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff; 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .wishlist-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .wishlist-heading h1 {
+            color: #4C9934; 
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .wishlist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .wishlist-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; 
+            margin-right: 15px;
+        }
+
+        .wishlist-item-info {
+            flex: 1; 
+        }
+
+        .wishlist-item-name {
+            font-weight: bold;
+            color: #4C9934; /
+        }
+
+        .wishlist-item-details {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .wishlist-item-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wishlist-item-actions button {
+            background-color: #4C9934; 
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .wishlist-item-actions button:hover {
+            background-color: #39842c; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wishlist-container">
+        <div class="wishlist-heading">
+            <h1>My Wishlist</h1>
+        </div>
+
+        <div class="wishlist-item">
+            <img src="product1.jpg" alt="Product image">
+            <div class="wishlist-item-info">
+                <h3 class="wishlist-item-name">Plain Tofu</h3>
+                
+            </div>
+            <div class="wishlist-item-actions">
+                <button onclick="window.location.href='myCart.html';">Move to My Cart</button>
+                <button>Remove</button>
+            </div>
+        </div>
+        <button onclick="window.location.href='buynow.html';">Buy Now</button>  
+    </div>
+</body>
+
+</html>

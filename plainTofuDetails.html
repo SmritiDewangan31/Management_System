@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain Tofu Product Detail</title>
+    <style>
+        body {
+            background-color: #e0f2f1; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .product-image img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover; 
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .product-details {
+            width: 50%;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            margin-bottom: 15px;
+        }
+
+        .product-actions {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .product-actions button {
+            background-color: #158cba; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .product-actions select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .quantity-options {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-options label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plain Tofu</h1>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="p1.jpg" alt="Plain Tofu Image 1">
+             <img src="p3.jpg" alt="Plain Tofu Image 2">
+            <img src="p2.jpg" alt="Plain Tofu Image 3">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Product Details</h1>
+            <p class="product-description">
+                This delicious and versatile soy-based product is a great source of protein and ideal for vegetarians and vegans. Enjoy it cubed and pan-fried, crumbled in salads, or blended into smoothies.
+            </p>
+            <p><h2>Key Features</h2></p>
+            <p>Fresh and firm soy paneer
+                Naturally rich in calcium, iron and protein
+                An excellent way to add nutrition to your daily diet
+                Specially suited for heart patients, diabetics and sports persons
+                A perfect addition to salads, soups, entrees, desserts etc.</p>
+            <p><h2>Return Policy</h2></p>
+            <p>This Item is non-returnable. For a damaged, defective, incorrect or expired item, you can request a replacement within 72 hours of delivery.
+                In case of an incorrect item, you may raise a replacement or return request only if the item is sealed/ unopened/ unused and in original condition.</p>
+            <div class="product-actions">
+                <button>Add to Wishlist</button>
+                <button onclick="window.location.href='buynow.html';">Buy Now</button> 
+            </div>
+            <div class="quantity-options">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">Select the Quantity</option>
+                    <option value="1">200 grams</option>
+                    <option value="2">250 grams</option>
+                    <option value="3">1 Kg</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

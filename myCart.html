@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0fff0; 
+    }
+
+    .cart-container {
+      background-color: #fff; 
+      border: 1px solid #cccccc; 
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .cart-header {
+      font-size: 20px;
+      color: #333333; 
+      margin-bottom: 10px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; 
+    }
+
+    .cart-item-details {
+      flex-grow: 1; 
+    }
+
+    .cart-item-name {
+      font-size: 16px;
+      color: #333333;
+    }
+
+    .cart-item-price {
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .cart-item-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .cart-item-quantity {
+      margin-right: 10px;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #4CAF50; 
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #3e8e41; 
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h1 class="cart-header">My Cart</h1>
+
+    <div class="cart-item">
+      <img src="product1.jpg" alt="Product Image">
+      <div class="cart-item-details">
+        <p class="cart-item-name">Plain Tofu</p>
+        <p class="cart-item-price">Rs 80</p>
+      </div>
+      <div class="cart-item-actions">
+        <span class="cart-item-quantity">Qty: 200 gms</span>
+        <button class="btn btn-primary">Update</button>
+        <button class="btn">Remove</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+        <img src="product2.jpg" alt="Product Image">
+        <div class="cart-item-details">
+          <p class="cart-item-name">Mixed Herbs Tofu</p>
+          <p class="cart-item-price">Rs 150</p>
+        </div>
+        <div class="cart-item-actions">
+          <span class="cart-item-quantity">Qty: 250 gms</span>
+          <button class="btn btn-primary">Update</button>
+          <button class="btn">Remove</button>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>

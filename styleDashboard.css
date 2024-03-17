@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #e0f2f1; /* Light green */
+  }
+  
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #4bad4b; 
+    padding: 20px;
+    color: white;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar li.active {
+    background-color: #035b44; /* Lighter green */
+    padding: 10px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  

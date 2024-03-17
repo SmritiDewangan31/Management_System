@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<header></header>
+<style>
+
+header{
+    position: absolute;
+    background-color: #05753a;
+    color: white;
+    top: 0%;
+    width: 100%;
+    text-align: left;
+    height: 8%;
+    padding: 10px 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+}
+</style>
+<body>
+  <div class="container">
+    <h1>Login or Sign up</h1>
+    <form id="login-form">
+      <label for="phone-number">Phone Number:</label>
+      <input type="tel" maxlength="10" id="phone-number" name="phone-number" placeholder="Enter your phone number" required  >
+      <button type="button" id="submitButton">Continue</button>
+    </form>
+  </div>
+  <script>
+    const phoneNumberInput = document.getElementById('phone-number');
+    const submitButton = document.getElementById('submitButton');
+
+    submitButton.addEventListener('click', () => {
+      const phoneNumber = phoneNumberInput.value.trim();
+
+      if (phoneNumber) {
+        // Simulate sending phone number to server
+        console.log(`Sending phone number ${phoneNumber} to server for OTP generation.`);
+
+        // Redirect to OTP verification page (replace with actual URL)
+        window.location.href = "otp-verification.html";
+  } else {
+    alert('Please enter your phone number');
+  }
+});
+
+  </script>
+</body>
+</html>
+
+
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0f2f1; /* Light green background */
+}
+
+.container {
+  background-color: #b2dfee; /* Lighter green container */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+a {
+  color: #4CAF50; /* Green link */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>

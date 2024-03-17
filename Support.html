@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="dropdown">Select Option:</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="option1">Select any one</option>
+                    <option value="option2">I need help with my order</option>
+                    <option value="option3">I would like to give feedback</option>
+                    <option value="option4">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Phone No.:</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f2f1; /* Light green */
+}
+
+.container {
+    background-color:#4bad4b; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #09465e; /* Lighter green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #73b7c9; /* Even lighter green */
+}
+
+</style>

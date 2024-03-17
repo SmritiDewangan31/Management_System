@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="phone-number">
+            <h2>Current Phone Number:</h2>
+            <p id="existing-number"></p>
+            <button id="delete-button" disabled>Delete</button>
+        </div>
+        <div class="form-container">
+            <h2>Add New Phone Number:</h2>
+            <input type="tel" id="new-number" placeholder="Enter phone number">
+            <button id="add-button">Add</button>
+        </div>
+    </div>
+    <script >
+        // Simulate retrieving existing phone number from a hypothetical storage (replace with your actual logic)
+const existingNumber = localStorage.getItem("phoneNumber") || "";
+
+// Update the displayed phone number
+document.getElementById("existing-number").textContent = existingNumber;
+
+// Update delete button state based on existing number
+const deleteButton = document.getElementById("delete-button");
+if (existingNumber) {
+  deleteButton.disabled = false;
+}
+
+// Add click event listener for the delete button
+deleteButton.addEventListener("click", function() {
+  // Simulate deleting the phone number from storage (replace with your actual logic)
+  localStorage.removeItem("phoneNumber");
+
+  // Update displayed number and button state
+  document.getElementById("existing-number").textContent = "";
+  deleteButton.disabled = true;
+});
+
+// Add submit event listener for the form
+const form = document.querySelector(".form-container");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const newNumber = document.getElementById("new-number").value;
+
+  // Simulate saving the new phone number to storage (replace with your actual logic)
+  localStorage.setItem("phoneNumber", newNumber);
+
+  // Update displayed number and clear the input field
+  document.getElementById("existing-number").textContent = newNumber;
+  document.getElementById("new-number").value = "";
+});
+
+    </script>
+</body>
+</html>
+<style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #e0f2f1; /* Light green */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.phone-number, .form-container {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.phone-number h2, .form-container h2 {
+  margin-bottom: 10px;
+}
+
+#new-number {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#delete-button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+#add-button {
+  background-color: #2ecc71; /* Green */
+  color: white;
+}
+
+</style>

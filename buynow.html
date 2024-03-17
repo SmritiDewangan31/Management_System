@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Details</h1>
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                </tr>
+                <tr>
+                    <td>Plain Tofu</td>
+                    <td>250 grams</td>
+                    <td>80 rupees</td>
+                    <td><div class="payment-section">
+                        <button class="pay-btn">Edit</button>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td>Mixed Herbs Tofu</td>
+                    <td>1 kg</td>
+                    <td>600 rupees</td>
+                    <td><div class="payment-section">
+                        <button class="pay-btn">Edit</button>
+                    </div></td>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+        </div>
+        <div class="container">
+            <h2>Delivery Address</h2>
+            <p id="address">Address will be displayed here</p>
+            <button onclick="editAddress()">Edit Address</button>
+        </div>
+        <div class="payment-section">
+            <button onclick="window.location.href='payment.html';" class="pay-btn">Pay Now</button> 
+            
+        </div>
+    
+    
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f2f1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.order-table thead th {
+    background-color: #f2f2f2;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.address-section {
+    margin-top: 20px;
+}
+
+#address {
+    margin-bottom: 10px;
+}
+
+.payment-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pay-btn {
+    background-color: #388e3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
